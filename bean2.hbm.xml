@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 23, 2017 12:29:47 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+		<class name="com.hql.Student" table="stu">
+			<id name="id" type="int">
+				<column name="ID" />
+				<generator class="assigned" />
+			</id>
+			<property name="name" type="java.lang.String">
+				<column name="NAME" />
+			</property>
+			<property name="subject" type="java.lang.String">
+				<column name="SUBJECT" />
+			</property>
+			<property name="marks" type="int">
+				<column name="MARKS" />
+			</property>
+		</class>
+	</hibernate-mapping>
